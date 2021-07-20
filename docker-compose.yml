@@ -1,0 +1,15 @@
+version: "3"
+services:
+  labeling-tool:
+    container_name: refaith
+    image: "node:10-buster-slim"
+    user: "node"
+    working_dir: /home/node
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node
+    restart: unless-stopped
+    ports:
+      - "93:5000/tcp"
+    command: "node src/server/index.js"
