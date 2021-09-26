@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { createGlobalStyle } from 'styled-components';
+import ReactJkMusicPlayer from 'react-jinke-music-player';
 import Backdrop from '../components/Backdrop';
 import TitleWrapper from '../components/TitleWrapper';
 import TitleText from '../components/TitleText';
+import 'react-jinke-music-player/assets/index.css';
+import audioList from '../config/config';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -44,6 +47,22 @@ const App = () => {
           Seite wird aktuell bearbeitet!
         </TitleText>
       </TitleWrapper>
+      <ReactJkMusicPlayer
+        showMediaSession
+        theme="auto"
+        bounds="html"
+        responsive
+        glassBg
+        remove={false}
+        showLyric={false}
+        defaultVolume={0.7}
+        autoPlayInitLoadPlayList={false}
+        audioLists={audioList}
+        defaultPosition={{
+          right: 100,
+          bottom: 100
+        }}
+      />
       <GlobalStyle />
     </Backdrop>
   );
