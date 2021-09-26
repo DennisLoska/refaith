@@ -53,6 +53,7 @@ const App = () => {
         bounds="html"
         responsive
         glassBg
+        autoPlay={false}
         remove={false}
         showLyric={false}
         defaultVolume={0.7}
