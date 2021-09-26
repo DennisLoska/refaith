@@ -1,6 +1,6 @@
 version: "3"
 services:
-  labeling-tool:
+  refaith:
     container_name: refaith
     image: "node:10-buster-slim"
     user: "node"
