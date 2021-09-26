@@ -18,6 +18,7 @@
     "express": "^4.16.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-jinke-music-player": "^4.24.1",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
@@ -35,7 +36,7 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "file-loader": "^3.0.0",
+    "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^1.17.3",
     "sass": "^1.35.2",
