@@ -48,14 +48,15 @@ const App = () => {
         </TitleText>
       </TitleWrapper>
       <ReactJkMusicPlayer
-        showMediaSession
         theme="dark"
         bounds="html"
         mode="full"
-        responsive
         glassBg
+        spaceBar
+        responsive
         showDownload
         showThemeSwitch
+        showMediaSession
         autoPlay={false}
         remove={false}
         showLyric={false}
@@ -63,10 +64,6 @@ const App = () => {
         autoPlayInitLoadPlayList={false}
         defaultVolume={0.7}
         audioLists={audioList}
-        defaultPosition={{
-          right: 100,
-          bottom: 100
-        }}
       />
       <GlobalStyle />
     </Backdrop>
