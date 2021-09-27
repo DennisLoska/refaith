@@ -49,17 +49,17 @@ const App = () => {
       </TitleWrapper>
       <ReactJkMusicPlayer
         showMediaSession
-        theme="auto"
+        theme="dark"
         bounds="html"
         mode="full"
         responsive
         glassBg
         showDownload
+        showThemeSwitch
         autoPlay={false}
         remove={false}
         showLyric={false}
         toggleMode={false}
-        showThemeSwitch={false}
         autoPlayInitLoadPlayList={false}
         defaultVolume={0.7}
         audioLists={audioList}
