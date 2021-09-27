@@ -51,13 +51,17 @@ const App = () => {
         showMediaSession
         theme="auto"
         bounds="html"
+        mode="full"
         responsive
         glassBg
+        showDownload
         autoPlay={false}
         remove={false}
         showLyric={false}
-        defaultVolume={0.7}
+        toggleMode={false}
+        showThemeSwitch={false}
         autoPlayInitLoadPlayList={false}
+        defaultVolume={0.7}
         audioLists={audioList}
         defaultPosition={{
           right: 100,
