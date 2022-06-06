@@ -1,6 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+import {
+  HashRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Construction from './containers/Construction';
+import Home from './containers/Home';
+import About from './containers/About';
+import Poetry from './containers/Poetry';
+import Music from './containers/Music';
+import Videos from './containers/Videos';
 
 // render the root component App
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/poetry" element={<Poetry />} />
+      <Route path="/music" element={<Music />} />
+      <Route path="*" element={<Videos />} />
+    </Routes>
+  </HashRouter>,
+  document.getElementById('root')
+);
