@@ -24,6 +24,17 @@ import s21 from '../assets/music/21_OUTRO.wav';
 
 const ARTIST = 'Re:Faith';
 
+const videoList = [
+  'https://www.youtube.com/embed/kd0-fneZc3I',
+  'https://www.youtube.com/embed/EdochGwCCmk',
+  'https://www.youtube.com/embed/scOac8PDlZQ',
+  'https://www.youtube.com/embed/ode0aZ_K0OM',
+  'https://www.youtube.com/embed/IEarhbx9fBI',
+  'https://www.youtube.com/embed/AuCkaMwk7mU',
+  'https://www.youtube.com/embed/VeJ4O_wyNoc',
+  'https://www.youtube.com/embed/gXKGFEBQ0vw'
+];
+
 const audioList = [
   {
     name: 'Erfolgserlebnis',
@@ -155,4 +166,7 @@ const audioList = [
   },
 ];
 
-export default audioList;
+export default {
+  videoList,
+  audioList
+};
