@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import ReactJkMusicPlayer from 'react-jinke-music-player';
-import Backdrop from '../components/Backdrop';
-import TitleWrapper from '../components/TitleWrapper';
-import TitleText from '../components/TitleText';
+import Backdrop from '../components/construction/Backdrop';
+import TitleWrapper from '../components/construction/TitleWrapper';
+import TitleText from '../components/construction/TitleText';
 import 'react-jinke-music-player/assets/index.css';
 import audioList from '../config/config';
 
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const App = () => {
+const Construction = () => {
   // setup initial component state
   const [data, setData] = useState(null);
   return (
@@ -70,4 +70,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Construction;
