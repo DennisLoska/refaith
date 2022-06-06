@@ -4,6 +4,8 @@ const Backdrop = styled.div`
   background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%) no-repeat;
   animation: colorChange 20s alternate infinite;
   position: absolute;
+  min-height: 100%;
+  height: fit-content;
   top: 0;
   left: 0;
   right: 0;
