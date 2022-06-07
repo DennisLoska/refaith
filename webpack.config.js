@@ -34,6 +34,10 @@ module.exports = {
     {
       test: /\.(mp3|wav)$/,
       loader: 'file-loader'
+    },
+    {
+      test: /\.md$/,
+      use: 'raw-loader'
     }
     ]
   },
