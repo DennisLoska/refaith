@@ -43,7 +43,10 @@ const Videos = () => useContainer(
     {
         Array.isArray(config?.videoList) ? (
           config.videoList.map(videoUrl => (
-            <div className="videoWrapper">
+            <div
+              className="videoWrapper"
+              key={videoUrl}
+            >
               <iframe
                 width="560"
                 height="315"
@@ -52,7 +55,6 @@ const Videos = () => useContainer(
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                key={videoUrl}
               />
             </div>
           ))
