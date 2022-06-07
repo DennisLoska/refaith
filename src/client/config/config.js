@@ -35,6 +35,8 @@ const videoList = [
   'https://www.youtube.com/embed/gXKGFEBQ0vw'
 ];
 
+const playlist = 'https://www.youtube.com/watch?v=KnPP_5AnErQ&list=PLWdXki6J_NQR5L2clEDhgFH8UG7lehIk0';
+
 const audioList = [
   {
     name: 'Erfolgserlebnis',
@@ -168,5 +170,6 @@ const audioList = [
 
 export default {
   videoList,
-  audioList
+  audioList,
+  playlist
 };
