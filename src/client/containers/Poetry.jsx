@@ -10,6 +10,10 @@ const Poetry = () => useContainer(
     <Card>✏️ ...</Card>
     <Card>✏️ ...</Card>
     <Card>✏️ ...</Card>
+    <Card>✏️ ...</Card>
+    <Card>✏️ ...</Card>
+    <Card>✏️ ...</Card>
+    <Card>✏️ ...</Card>
   </CardWrapper>
 );
 

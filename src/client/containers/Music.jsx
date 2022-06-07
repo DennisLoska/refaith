@@ -4,15 +4,23 @@ import config from '../config/config';
 import useContainer from '../hooks/useContainer';
 import TitleWrapper from '../components/construction/TitleWrapper';
 import TitleText from '../components/construction/TitleText';
+import AlbumCover from '../assets/images/zeitkapsel.png';
 
 const Music = () => useContainer(
   <>
     <TitleWrapper>
-      <TitleText size="6em">
-        Zeitkapsel
-      </TitleText>
+      <img
+        src={AlbumCover}
+        width="20%"
+        alt="Zeitkapsel Albumcover"
+        style={{ marginBottom: '50px', borderRadius: '5px' }}
+      />
       <TitleText size="1.5em">
-        Ein persönliches Projekt zur Vergangenheitsbewältigung
+        Zeitkapsel ist ein persönliches Projekt aus dem Jahr 2021,
+        {' '}
+        <br />
+        {' '}
+        um Frieden mit meiner Vergangenheit zu schließen!
       </TitleText>
     </TitleWrapper>
     <ReactJkMusicPlayer
