@@ -1,4 +1,4 @@
-# Wüstenwanderung
+# Wüsten­wanderung
 
 _Von einem geliebten Menschen - wie Sand geronnen die Zeit, nur die Erinnerung bleibt_
 
