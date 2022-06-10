@@ -63,11 +63,12 @@ const useContainer = children => (
   <Backdrop>
     <Header>Re:Faith</Header>
     <Navigation>
-      <NavigationItem to="/">Home</NavigationItem>
+      <NavigationItem to="/">Start</NavigationItem>
       <NavigationItem to="/poetry">Poetry</NavigationItem>
-      <NavigationItem to="/music">Music</NavigationItem>
+      <NavigationItem to="/music">Musik</NavigationItem>
       <NavigationItem to="/videos">Videos</NavigationItem>
-      <NavigationItem to="/about">About</NavigationItem>
+      <NavigationItem to="/about">Über</NavigationItem>
+      <NavigationItem to="/imprint">Impressum</NavigationItem>
     </Navigation>
     { children }
     <GlobalStyle />

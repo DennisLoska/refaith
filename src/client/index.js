@@ -11,6 +11,7 @@ import About from './containers/About';
 import Poetry from './containers/Poetry';
 import Music from './containers/Music';
 import Videos from './containers/Videos';
+import Imprint from './containers/Imprint';
 
 // render the root component App
 ReactDOM.render(
@@ -20,7 +21,9 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/poetry" element={<Poetry />} />
       <Route path="/music" element={<Music />} />
-      <Route path="*" element={<Videos />} />
+      <Route path="/videos" element={<Videos />} />
+      <Route path="/imprint" element={<Imprint />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   </HashRouter>,
   document.getElementById('root')

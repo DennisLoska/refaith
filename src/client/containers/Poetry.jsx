@@ -18,7 +18,7 @@ const Poetry = () => useContainer(
           <Card
             width="35em"
             height="fit-content"
-            key={new Date().getTime() + Math.floor(Math.random() * 42)}
+            key={new Date().getTime() + Math.floor(Math.random() * 42069)}
             isPoem
           >
             <Markdown className="poem">{poem?.default}</Markdown>
