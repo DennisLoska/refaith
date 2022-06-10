@@ -8,6 +8,13 @@ const StyledVideos = styled.div`
     padding-top: 50px;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @media only screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     @keyframes shine {
         to {
@@ -18,6 +25,7 @@ const StyledVideos = styled.div`
     .videoWrapper {
         margin: 25px;
         width: 560px;
+        max-width: 100%;
         height: 315px;
         border-radius: 5px;
         
@@ -31,10 +39,20 @@ const StyledVideos = styled.div`
         background-size: 50px 500px;
         background-position: 0 0;
         animation: shine 1s infinite;
+
+        @media only screen and (max-width: 768px) {
+          height: 16em;
+        }
+
+        @media only screen and (max-width: 480px) {
+          height: 180px;
+        }
     }
         
     iframe {
         border-radius: 5px;
+        max-width: 100%;
+        height: 100%;
     }
 `;
 
@@ -49,7 +67,6 @@ const Videos = () => useContainer(
             >
               <iframe
                 width="560"
-                height="315"
                 src={videoUrl}
                 title="YouTube video player"
                 frameBorder="0"
