@@ -83,19 +83,30 @@ const StyledCard = styled.div`
     }
 
     .contentSpacer {
-        height: 50px;
+        height: 100px;
         width: 100%;
     }
 
     img {
         border-radius: 5px;
     }
+
+    .poem {
+      text-align: center;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      @media only screen and (max-width: 768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
   `;
 
 const Card = (props) => {
   const [isOpen, setOpen] = useState(false);
   const { isPoem, children, height } = props;
-  console.log(height);
+
   return (
     <StyledCard {...props} isOpen={isOpen}>
       { children }
