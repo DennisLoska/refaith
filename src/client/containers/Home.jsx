@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import CardWrapper from '../components/card/CardWrapper';
 import useContainer from '../hooks/useContainer';
-import AlbumCover from '../assets/images/zeitkapsel.png';
 import TitleWrapper from '../components/construction/TitleWrapper';
 import TitleText from '../components/construction/TitleText';
 

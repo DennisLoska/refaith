@@ -6,6 +6,10 @@ const Card = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 768px) {
+        padding: 50px 0;
+    }
 `;
 
 export default Card;
