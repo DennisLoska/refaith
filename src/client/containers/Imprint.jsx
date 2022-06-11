@@ -6,7 +6,7 @@ import useContainer from '../hooks/useContainer';
 
 const StyledAbout = styled.article`
     display: flex;
-    padding-top: 50px;
+    padding-top: 25px;
     justify-content: center;
     flex-wrap: wrap;
 `;

@@ -37,136 +37,138 @@ const videoList = [
 
 const playlist = 'https://www.youtube.com/watch?v=KnPP_5AnErQ&list=PLWdXki6J_NQR5L2clEDhgFH8UG7lehIk0';
 
-const audioList = [
-  {
-    name: 'Erfolgserlebnis',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s1
-  },
-  {
-    name: 'HODL',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s2
-  },
-  {
-    name: 'Wenn ich dich finde',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s3
-  },
-  {
-    name: 'Nutze die Zeit',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s4
-  },
-  {
-    name: 'Worte',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s5
-  },
-  {
-    name: 'Vergangenheit',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s6
-  },
-  {
-    name: 'Ich lasse los',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s7
-  },
-  {
-    name: 'Interlude',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s8
-  },
-  {
-    name: 'Eines Tages',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s9
-  },
-  /*
-  {
-    name: 'Das Alte ist Vorbei',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s10
-  },
-  */
-  {
-    name: 'Für Tini',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s11
-  },
-  {
-    name: 'Für Maria',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s12
-  },
-  {
-    name: 'Mein Ziel',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s13
-  },
-  {
-    name: 'Das Kreuz',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s14
-  },
-  {
-    name: 'Mein Leben',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s15
-  },
-  {
-    name: 'Zeitkapsel',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s16
-  },
-  {
-    name: 'Schicksal',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s17
-  },
-  {
-    name: 'Streben nach Glück',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s18
-  },
-  {
-    name: 'Ich muss jetzt gehen',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s19
-  },
-  {
-    name: 'Überwindung',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s20
-  },
-  {
-    name: 'Outro',
-    singer: ARTIST,
-    cover: albumCover,
-    musicSrc: s21
-  },
-];
+const audioList = {
+  zeitkapsel: [
+    {
+      name: 'Erfolgserlebnis',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s1
+    },
+    {
+      name: 'HODL',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s2
+    },
+    {
+      name: 'Wenn ich dich finde',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s3
+    },
+    {
+      name: 'Nutze die Zeit',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s4
+    },
+    {
+      name: 'Worte',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s5
+    },
+    {
+      name: 'Vergangenheit',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s6
+    },
+    {
+      name: 'Ich lasse los',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s7
+    },
+    {
+      name: 'Interlude',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s8
+    },
+    {
+      name: 'Eines Tages',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s9
+    },
+    /*
+   {
+     name: 'Das Alte ist Vorbei',
+     singer: ARTIST,
+     cover: albumCover,
+     musicSrc: s10
+   },
+   */
+    {
+      name: 'Für Tini',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s11
+    },
+    {
+      name: 'Für Maria',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s12
+    },
+    {
+      name: 'Mein Ziel',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s13
+    },
+    {
+      name: 'Das Kreuz',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s14
+    },
+    {
+      name: 'Mein Leben',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s15
+    },
+    {
+      name: 'Zeitkapsel',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s16
+    },
+    {
+      name: 'Schicksal',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s17
+    },
+    {
+      name: 'Streben nach Glück',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s18
+    },
+    {
+      name: 'Ich muss jetzt gehen',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s19
+    },
+    {
+      name: 'Überwindung',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s20
+    },
+    {
+      name: 'Outro',
+      singer: ARTIST,
+      cover: albumCover,
+      musicSrc: s21
+    },
+  ]
+};
 
 export default {
   videoList,

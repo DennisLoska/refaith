@@ -101,6 +101,28 @@ const StyledCard = styled.div`
         padding-right: 10px;
       }
     }
+
+    .albumCover {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .album {
+      padding: 25px;
+
+      h2 {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   `;
 
 const Card = (props) => {

@@ -5,7 +5,7 @@ import config from '../config/config';
 
 const StyledVideos = styled.div`
     display: flex;
-    padding-top: 50px;
+    padding-top: 25px;
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 10%;
