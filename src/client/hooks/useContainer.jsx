@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { Link } from 'react-router-dom';
 import Backdrop from '../components/construction/Backdrop';
 import Header from '../components/header/Header';
 import Navigation from '../components/navigation/Navigation';
@@ -61,9 +62,10 @@ const GlobalStyle = createGlobalStyle`
 
 const useContainer = children => (
   <Backdrop>
-    <Header>Re:Faith</Header>
+    <Header>
+      <Link id="title" to="/" style={{ textDecoration: 'none' }}>Re:Faith</Link>
+    </Header>
     <Navigation>
-      <NavigationItem navId="" to="/">Start</NavigationItem>
       <NavigationItem navId="poetry" to="/poetry">Poetry</NavigationItem>
       <NavigationItem navId="music" to="/music">Musik</NavigationItem>
       <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
