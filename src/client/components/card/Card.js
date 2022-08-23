@@ -92,7 +92,7 @@ const StyledCard = styled.div`
     }
 
     .poem {
-      text-align: center;
+      text-align: left;
       padding-left: 25px;
       padding-right: 25px;
 
@@ -127,23 +127,29 @@ const StyledCard = styled.div`
 
 const Card = (props) => {
   const [isOpen, setOpen] = useState(false);
-  const { isPoem, children, height } = props;
+  const { isPoem, children } = props;
+
+  // character length of a potential poem
+  const contentLength = children?.props?.children?.length;
+
+  // no expand option for short poems
+  const SHORT_LIMIT = 450;
 
   return (
     <StyledCard {...props} isOpen={isOpen}>
       { children }
       {
-          !isOpen && isPoem ? (
+          !isOpen && isPoem && contentLength > SHORT_LIMIT ? (
             <div className="fadeout" />
           ) : null
       }
       {
-          isOpen && isPoem ? (
+          isOpen && isPoem && contentLength > SHORT_LIMIT ? (
             <div className="contentSpacer" />
           ) : null
       }
       {
-            isPoem ? (
+            isPoem && contentLength > SHORT_LIMIT ? (
               <button
                 onClick={() => setOpen(!isOpen)}
                 type="button"
