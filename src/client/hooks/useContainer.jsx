@@ -58,22 +58,30 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
     }
+
+    .backdrop-blur {
+        backdrop-filter: blur(3px);
+        min-height: 100vh;
+        height: fit-content;
+    }
 `;
 
-const useContainer = children => (
-  <Backdrop>
-    <Header>
-      <Link id="title" to="/" style={{ textDecoration: 'none' }}>Re:Faith</Link>
-    </Header>
-    <Navigation>
-      <NavigationItem navId="poetry" to="/poetry">Poetry</NavigationItem>
-      <NavigationItem navId="music" to="/music">Musik</NavigationItem>
-      <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
-      <NavigationItem navId="about" to="/about">Über</NavigationItem>
-      <NavigationItem navId="imprint" to="/imprint">Impressum</NavigationItem>
-    </Navigation>
-    { children }
-    <GlobalStyle />
+const useContainer = (children, coverImage) => (
+  <Backdrop coverImage={coverImage}>
+    <div className="backdrop-blur">
+      <Header>
+        <Link id="title" to="/" style={{ textDecoration: 'none' }}>Re:Faith</Link>
+      </Header>
+      <Navigation>
+        <NavigationItem navId="poetry" to="/poetry">Poetry</NavigationItem>
+        <NavigationItem navId="music" to="/music">Musik</NavigationItem>
+        <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
+        <NavigationItem navId="about" to="/about">Über</NavigationItem>
+        <NavigationItem navId="imprint" to="/imprint">Impressum</NavigationItem>
+      </Navigation>
+      { children }
+      <GlobalStyle />
+    </div>
   </Backdrop>
 );
 

@@ -5,6 +5,7 @@ import useContainer from '../hooks/useContainer';
 import AlbumCover from '../assets/images/zeitkapsel.png';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
+import BackgroundImage from '../assets/images/riverside-1.jpg';
 
 const Music = () => useContainer(
   (() => {
@@ -68,7 +69,8 @@ const Music = () => useContainer(
         }
       </>
     );
-  })()
+  })(),
+  BackgroundImage
 );
 
 export default Music;

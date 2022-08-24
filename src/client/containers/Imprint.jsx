@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
+import BackgroundImage from '../assets/images/forest-far.jpg';
 
 const StyledAbout = styled.article`
     display: flex;
@@ -26,7 +27,8 @@ const Imprint = () => useContainer(
       <p>Kontakt:</p>
       <span>d.loska@proton.me</span>
     </Card>
-  </StyledAbout>
+  </StyledAbout>,
+  BackgroundImage
 );
 
 export default Imprint;

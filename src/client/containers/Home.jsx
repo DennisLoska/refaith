@@ -4,6 +4,7 @@ import CardWrapper from '../components/card/CardWrapper';
 import useContainer from '../hooks/useContainer';
 import TitleWrapper from '../components/construction/TitleWrapper';
 import TitleText from '../components/construction/TitleText';
+import BackgroundImage from '../assets/images/riverside.jpg';
 
 const StyledHome = styled.div`
     display: flex;
@@ -22,7 +23,8 @@ const Home = () => useContainer(
         </TitleText>
       </TitleWrapper>
     </CardWrapper>
-  </StyledHome>
+  </StyledHome>,
+  BackgroundImage
 );
 
 export default Home;

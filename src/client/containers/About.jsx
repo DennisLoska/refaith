@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
+import BackgroundImage from '../assets/images/forest-close.jpg';
 
 const StyledAbout = styled.article`
     display: flex;
@@ -46,7 +47,8 @@ const About = () => useContainer(
       </p>
       <span>Dennis</span>
     </Card>
-  </StyledAbout>
+  </StyledAbout>,
+  BackgroundImage
 );
 
 export default About;

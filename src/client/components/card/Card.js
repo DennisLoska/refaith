@@ -133,7 +133,7 @@ const Card = (props) => {
   const contentLength = children?.props?.children?.length;
 
   // no expand option for short poems
-  const SHORT_LIMIT = 450;
+  const SHORT_LIMIT = 500;
 
   return (
     <StyledCard {...props} isOpen={isOpen}>
