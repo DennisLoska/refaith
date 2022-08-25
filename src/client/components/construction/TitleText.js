@@ -5,7 +5,7 @@ const TitleText = styled.div`
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-
+    margin-bottom: 25px;
     font-size: ${props => props.size};
 `;
 export default TitleText;
