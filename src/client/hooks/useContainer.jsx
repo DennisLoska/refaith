@@ -73,7 +73,7 @@ const useContainer = (children, coverImage) => (
         <Link id="title" to="/" style={{ textDecoration: 'none' }}>Re:Faith</Link>
       </Header>
       <Navigation>
-        <NavigationItem navId="poetry" to="/poetry">Poetry</NavigationItem>
+        <NavigationItem navId="poetry" to="/poetry">Poesie</NavigationItem>
         <NavigationItem navId="music" to="/music">Musik</NavigationItem>
         <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
         <NavigationItem navId="about" to="/about">Über</NavigationItem>
