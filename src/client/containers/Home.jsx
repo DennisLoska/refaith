@@ -28,7 +28,7 @@ const Home = () => useContainer(
               Starte den Glauben neu!
             </TitleText>
             <Row horizontalAlignment="center">
-              <HomeButton onClick={() => history('/poetry')}>
+              <HomeButton isFull onClick={() => history('/poetry')}>
                 Meine Poesie
               </HomeButton>
               <HomeButton onClick={() => history('/about')}>
