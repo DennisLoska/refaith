@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-import BackgroundImage from '../assets/images/forest-close.jpg';
+import BackgroundImage from '../assets/images/forest-close.webp';
 
 const StyledAbout = styled.article`
     display: flex;

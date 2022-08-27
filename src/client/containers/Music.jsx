@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import ReactJkMusicPlayer from 'react-jinke-music-player';
 import config from '../config/config';
 import useContainer from '../hooks/useContainer';
-import AlbumCover from '../assets/images/zeitkapsel.png';
+import AlbumCover from '../assets/images/zeitkapsel.webp';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
-import BackgroundImage from '../assets/images/riverside-1.jpg';
+import BackgroundImage from '../assets/images/riverside-1.webp';
 
 const Music = () => useContainer(
   (() => {

@@ -1,4 +1,4 @@
-import albumCover from '../assets/images/zeitkapsel.png';
+import albumCover from '../assets/images/zeitkapsel.webp';
 
 import s1 from '../assets/music/1_ERFOLGSERLEBNIS.wav';
 import s2 from '../assets/music/2_HODL.wav';

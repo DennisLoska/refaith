@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import useContainer from '../hooks/useContainer';
 import config from '../config/config';
-import BackgroundImage from '../assets/images/riverside-2.jpg';
+import BackgroundImage from '../assets/images/riverside-2.webp';
 
 const StyledVideos = styled.div`
     display: flex;

@@ -5,7 +5,7 @@ import CardWrapper from '../components/card/CardWrapper';
 import useContainer from '../hooks/useContainer';
 import TitleWrapper from '../components/construction/TitleWrapper';
 import TitleText from '../components/construction/TitleText';
-import BackgroundImage from '../assets/images/riverside.jpg';
+import BackgroundImage from '../assets/images/riverside.webp';
 import HomeButton from '../components/buttons/HomeButton';
 import Row from '../components/row/Row';
 

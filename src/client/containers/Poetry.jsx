@@ -4,7 +4,7 @@ import Markdown from 'markdown-to-jsx';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-import BackgroundImage from '../assets/images/tree.jpg';
+import BackgroundImage from '../assets/images/tree.webp';
 
 const importAll = r => r.keys().map(r);
 
