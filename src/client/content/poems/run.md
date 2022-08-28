@@ -1,5 +1,9 @@
 # Run
 
+**1 Corinthians 9:24** 
+
+_Know ye not that they which run in a race run all, but one receiveth the prize? So run, that ye may obtain._
+
 I got mosquito stings, down my legs <br>
 And I'm running fast on these tracks
 
@@ -15,10 +19,10 @@ Cameras on don't make an angry face
 I want to win the prize, that's how I race <br>
 I give it all I have, making time and space
 
-The winner takes it all, the loser standing small <br>
-To become successful, you just gotta beat em all
+The winner takes it all, the loser's standing small <br>
+To become successful, you just gotta beat 'em all
 
-Run run run breathin' and out <br>
+Run run run breathin' in and out <br>
 Under the sun, life's rushing through the body now
 
 Step by step, I'm in a perfect condition <br>

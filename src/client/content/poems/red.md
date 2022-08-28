@@ -1,4 +1,4 @@
-# Chata
+# Rot
 
 _Es gibt Menschen die leuchten so hell, dass ihre Ausstrahlung allein einen einsamen Raum fluten kann._
 
