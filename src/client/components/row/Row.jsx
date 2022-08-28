@@ -4,6 +4,12 @@ import styled from 'styled-components';
 const StyledRow = styled.div`
     display: flex;
     width: 100%;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     ${(props) => {
     if (props.horizontalAlignment != null) {
       return `justify-content: ${props.horizontalAlignment};`;

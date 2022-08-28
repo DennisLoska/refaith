@@ -8,7 +8,7 @@ const StyledButton = styled.div`
     padding: 15px;
     font-size: 18px;
     color: #fff;
-    margin: 0 1em;
+    margin: 0 1em 25px 1em;
     border-radius: 5px;
     border: 0px solid #e0e0e0;
     background: rgba(0,0,0,0.5);

@@ -14,7 +14,8 @@ const StyledHome = styled.div`
     padding-top: 50px;
     justify-content: center;
     flex-wrap: wrap;
-    height: 80vh;
+    min-height: 80vh;
+    height: fit-content;
 `;
 
 const Home = () => useContainer(
@@ -25,7 +26,7 @@ const Home = () => useContainer(
         <CardWrapper>
           <TitleWrapper>
             <TitleText size="4em">
-              Starte den Glauben neu!
+              Christlicher Glaube in Poesie. Ein Versuch die Wahrheit in Worte zu fassen.
             </TitleText>
             <Row horizontalAlignment="center">
               <HomeButton isFull onClick={() => history('/poetry')}>
@@ -36,6 +37,15 @@ const Home = () => useContainer(
               </HomeButton>
             </Row>
           </TitleWrapper>
+          <TitleText size="1em">
+            <a
+              href="https://redeemedblog.jimdofree.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Inspiriert durch Redeemed
+            </a>
+          </TitleText>
         </CardWrapper>
       </StyledHome>
 

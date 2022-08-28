@@ -7,5 +7,13 @@ const TitleText = styled.div`
     text-align: center;
     margin-bottom: 25px;
     font-size: ${props => props.size};
+
+    a {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 0 0 20px var(--active-color);
+    }
 `;
 export default TitleText;
