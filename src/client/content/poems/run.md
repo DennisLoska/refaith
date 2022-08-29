@@ -10,7 +10,7 @@ And I'm running fast on these tracks
 Put my focus on my elevated pace <br>
 And my heart rate, mate - it's a champions race
 
-Run run run - breathin' and out <br>
+Run run run - breathin' in and out <br>
 Under the sun, life's rushing through the body now
 
 Beware be prepared, momentary chase <br>
