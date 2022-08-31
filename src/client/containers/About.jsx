@@ -52,7 +52,7 @@ const About = () => useContainer(
         Wie kann sogenannte Kunst, wo sich Menschen halb nackt zeigen, den Anspruch einer Allianz mit der höchsten moralischen Instanz erheben, wenn sie gleichzeitig archetypisch die Charaktereigenschaften der Schlange Eden's annimmt.
         Denn List und Nacktheit sind eng miteinander verbunden und die Schlange war listiger, als alle Tiere im Garten.
         Schon Dostoevsky traf die Aussage durch den Charakter Prinz Myshkin im Roman &quot;Der Idiot&quot;, dass Schönheit die Welt retten werde, doch ist dies nicht der Fall, wenn diese Schönheit pervertiert und missbraucht wird und am Ende dieses Prozesses dem Ganzen das Wort &quot;Kunst&quot; angeklebt wird.
-        Ein schönes Wesen und Charakter, welche einen schönen Körper und eine schöne Umgebung und ordentlicher Art und Weise hervorbringen, sind in der Lage, die Welt zu retten.
+        Ein schönes Wesen und Charakter, welche einen schönen Körper und eine schöne Umgebung in ordentlicher Art und Weise hervorbringen, sind in der Lage, die Welt zu retten.
         Diese Schönheit hat in der Tat etwas Göttliches an sich.
       </p>
       <h4>Musik ist besonders</h4>
