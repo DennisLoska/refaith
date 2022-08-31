@@ -20,8 +20,8 @@ Nichts konnte ab da meinen Wissensdurst stillen!<br>
 Ich begann die Wahrheit zu verstehen, aber nicht zu leben.<br>
 Der Druck auf meinen Schultern, ich verzagte und weswegen?
 
-_Jeder meiner Schleier ist jetzt hier<br>
-und ich weiß, ich bin eigentlich im falschen Revier._
+_Alle meine Schleier sind jetzt hier_<br>
+_und ich weiß, ich bin eigentlich im falschen Revier._
 
 _Mizraim_
 
@@ -57,8 +57,8 @@ Das Wissen, es zehrt. Das Wissen, es nervt.<br>
 Ich möchte doch nur leben, was wahre Liebe ist.<br>
 Und dir damit danken, weil du alles für mich bist!
 
-_Jeder meiner Schleier ist jetzt hier<br>
-und ich weiß, ich bin eigentlich im falschen Revier._
+_Alle meine Schleier sind jetzt hier_<br>
+_und ich weiß, ich bin eigentlich im falschen Revier._
 
 _Mizraim_
 
