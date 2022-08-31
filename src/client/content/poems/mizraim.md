@@ -5,7 +5,7 @@ Statt auf mein' Vater zu hören, blick ich zurück nach Mizraim.<br>
 Die Sünde in meinem Leben bietet stetig Grund zur Trennung.<br>
 Ich struggle diesen Kampf und fühle die Verbrennung.
 
-Mein Blick ist betrübt, und ich ft den Tränen nah,<br>
+Mein Blick ist betrübt, und ich oft den Tränen nah,<br>
 weil ich mich erinner', was ich schon in meinem Leben sah.<br>
 Ich trage die Verantwortung für mein ganzes Leben.<br>
 Für jede Tat muss ich am Ende Rechenschaft geben!
@@ -16,18 +16,18 @@ Ohne diese Hoffnung wäre ich schon längst verwelkt.<br>
 Die Quelle meiner Kraft ist mitten in ihr gestellt.
 
 Nach langer Suche führte mich der Herr zu seinem Willen.<br>
-Nichts konnte ab da meinen Wissensdurst stillen!<br>
+Nichts konnte ab da meinen großen Wissensdurst stillen!<br>
 Ich begann die Wahrheit zu verstehen, aber nicht zu leben.<br>
 Der Druck auf meinen Schultern, ich verzagte und weswegen?
 
 _Alle meine Schleier sind jetzt hier_<br>
 _und ich weiß, ich bin eigentlich im falschen Revier._
 
-_Mizraim_
+_**Mizraim**_
 
 _Du holst mich immerwieder ein._
 
-_Mizraim_
+_**Mizraim**_
 
 _Lass mich einfach endlich frei!_
 
@@ -60,11 +60,11 @@ Und dir damit danken, weil du alles für mich bist!
 _Alle meine Schleier sind jetzt hier_<br>
 _und ich weiß, ich bin eigentlich im falschen Revier._
 
-_Mizraim_
+_**Mizraim**_
 
 _Du holst mich immerwieder ein._
 
-_Mizraim_
+_**Mizraim**_
 
 _Lass mich einfach endlich frei!_
 
