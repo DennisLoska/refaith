@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
     :root {
         --active-color: #a7b000;
+        overscroll-behavior: none;
     }
     
     @keyframes colorChange {
