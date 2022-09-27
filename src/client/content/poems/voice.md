@@ -39,7 +39,7 @@ Wille bleibt, sah sein Joch, es verflucht.
 Stille Stimme, ferner Freund.<br>
 Frieden mit Gott ist was das Herz erfreut.
 
-Welche Worte schenken?
+Welche Worte schenken?<br>
 Meinung sagen oder ablenken?
 
 Tut mir leid.<br>
