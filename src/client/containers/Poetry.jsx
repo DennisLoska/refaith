@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Markdown from 'markdown-to-jsx';
+import Draggable from 'react-draggable';
+import { v4 as uuidv4 } from 'uuid';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
@@ -16,13 +18,24 @@ const Poetry = () => useContainer(
     {
       Array.isArray(poems) ? (
         poems.map(poem => (
-          <Card
-            height="fit-content"
-            key={new Date().getTime() + Math.floor(Math.random() * 42069)}
-            isPoem
+          <Draggable
+            axis="both"
+            handle=".dragHandling"
+            defaultPosition={{ x: 0, y: 0 }}
+            position={null}
+            scale={1}
+            bounds="parent"
+            key={uuidv4()}
           >
-            <Markdown className="poem">{poem?.default}</Markdown>
-          </Card>
+            <Card
+              height="fit-content"
+              className="dragHandling"
+              isPoem
+              style={{ cursor: 'pointer' }}
+            >
+              <Markdown className="poem">{poem?.default}</Markdown>
+            </Card>
+          </Draggable>
         ))) : null
     }
   </CardWrapper>,
