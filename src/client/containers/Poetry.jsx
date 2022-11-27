@@ -12,12 +12,11 @@ const importAll = r => r.keys().map(r);
 const poems = importAll(require.context('../content/poems', false, /\.(md)$/));
 
 const Poetry = () => useContainer(
-  <CardWrapper>
+  <CardWrapper padding="25px 6.8%">
     {
       Array.isArray(poems) ? (
         poems.map(poem => (
           <Card
-            width="35em"
             height="fit-content"
             key={new Date().getTime() + Math.floor(Math.random() * 42069)}
             isPoem

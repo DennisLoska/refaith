@@ -3,18 +3,32 @@ import styled from 'styled-components';
 
 const StyledCard = styled.div`
     border-radius: 5px;
-    min-height: 400px;
+    min-height: ${props => (props.isPoem ? '250px' : '300px')};
     min-width: 300px;
-    width: ${props => props.width || '300px'};
+    width: ${props => (props.isPoem ? 'fit-content' : props.width || '300px')};
+    max-width: ${props => (props.isPoem ? '35em' : 'unset')};
     margin: ${props => props.margin || '25px'};
     padding: ${props => props.padding || '25px'};
-    height: ${props => props.height || '500px'};
     background: ${props => props.background || '#F8F8F8'}; 
     border: ${props => props.border}; 
     box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'}; 
     -webkit-box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'}; 
     -moz-box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'};
-    height: ${props => (props.isOpen || !props.isPoem ? props.height : '500px')};
+    height: ${(props) => {
+    if (props.isOpen || !props.isPoem) {
+      return props.height;
+    }
+    if (props.isPoem && !props.isOpen) {
+      return 'fit-content';
+    }
+    if (props.height) {
+      console.log('hi');
+
+      return props.height;
+    }
+    return '500px';
+  }};
+    max-height: ${props => (props.isPoem && !props.isOpen ? '500px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
     position: relative;
     overflow-x: hidden;
