@@ -13,29 +13,42 @@ const importAll = r => r.keys().map(r);
 // import all poem markdown files dynamically
 const poems = importAll(require.context('../content/poems', false, /\.(md)$/));
 
+console.log(window);
 const Poetry = () => useContainer(
   <CardWrapper padding="25px 6.8%">
     {
       Array.isArray(poems) ? (
         poems.map(poem => (
-          <Draggable
-            axis="both"
-            handle=".dragHandling"
-            defaultPosition={{ x: 0, y: 0 }}
-            position={null}
-            scale={1}
-            bounds="parent"
-            key={uuidv4()}
-          >
+          window.innerWidth <= 1024 ? (
             <Card
               height="fit-content"
               className="dragHandling"
               isPoem
               style={{ cursor: 'pointer' }}
+              key={uuidv4()}
             >
               <Markdown className="poem">{poem?.default}</Markdown>
             </Card>
-          </Draggable>
+          ) : (
+            <Draggable
+              axis="both"
+              handle=".dragHandling"
+              defaultPosition={{ x: 0, y: 0 }}
+              position={null}
+              scale={1}
+              bounds="parent"
+              key={uuidv4()}
+            >
+              <Card
+                height="fit-content"
+                className="dragHandling"
+                isPoem
+                style={{ cursor: 'pointer' }}
+              >
+                <Markdown className="poem">{poem?.default}</Markdown>
+              </Card>
+            </Draggable>
+          )
         ))) : null
     }
   </CardWrapper>,

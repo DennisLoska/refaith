@@ -5,7 +5,15 @@ const StyledCard = styled.div`
     border-radius: 5px;
     min-height: ${props => (props.isPoem ? '250px' : '300px')};
     min-width: 300px;
-    width: ${props => (props.isPoem ? 'fit-content' : props.width || '300px')};
+    width: ${(props) => {
+    if (props.isPoem && window.innerWidth <= 600) {
+      return '100%';
+    }
+    if (props.isPoem) {
+      return 'fit-content';
+    }
+    return props.width || '300px';
+  }};
     max-width: ${props => (props.isPoem ? '35em' : 'unset')};
     margin: ${props => props.margin || '25px'};
     padding: ${props => props.padding || '25px'};
