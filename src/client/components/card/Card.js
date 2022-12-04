@@ -30,13 +30,11 @@ const StyledCard = styled.div`
       return 'fit-content';
     }
     if (props.height) {
-      console.log('hi');
-
       return props.height;
     }
     return '500px';
   }};
-    max-height: ${props => (props.isPoem && !props.isOpen ? '500px' : 'unset')};
+    max-height: ${props => (props.isPoem && !props.isOpen ? '1120px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
     position: relative;
     overflow-x: hidden;
@@ -117,11 +115,6 @@ const StyledCard = styled.div`
       text-align: left;
       padding-left: 25px;
       padding-right: 25px;
-
-      @media only screen and (max-width: 768px) {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
     }
 
     .albumCover {
@@ -152,7 +145,7 @@ const Card = (props) => {
   const { isPoem, children } = props;
 
   // character length of a potential poem
-  const contentLength = children?.props?.children?.length;
+  const contentLength = children[1]?.props?.children?.length;
 
   // no expand option for short poems
   const SHORT_LIMIT = 500;
