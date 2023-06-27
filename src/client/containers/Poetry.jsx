@@ -5,14 +5,14 @@ import { v4 as uuidv4 } from 'uuid';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-import BackgroundImage from '../assets/images/tree.webp';
+import BackgroundImage from '../assets/images/library.webp';
 
 const importAll = r => r.keys().map(r);
 
 // import all poem markdown files dynamically
 const poems = importAll(require.context('../content/poems', false, /\.(md)$/))
   .sort(() => 0.5 - Math.random());
-const illustrations = importAll(require.context('../assets/images/poems', false, /\.(png)$/))
+const illustrations = importAll(require.context('../assets/images/poems', false, /\.(webp)$/))
   .sort(() => 0.5 - Math.random());
 
 console.log(window);
