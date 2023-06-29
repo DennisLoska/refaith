@@ -27,7 +27,7 @@ const Poetry = () => {
         margin="0px auto 50px"
         key={`poem-${i}`}
       >
-        <div style={{ height: '340px', overflow: 'hidden' }}>
+        <div style={{ height: 'fit-content', overflow: 'hidden' }}>
           <LazyLoadImage
             alt="Poem illustration"
             src={illustrations[i < illustrations.length ? i : Math.ceil(i * 0.5)]}
