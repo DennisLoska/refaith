@@ -24,7 +24,11 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/poetry" element={<Poetry />} />
-        <Route path="/music" element={<Music />} />
+        {
+          /*
+          <Route path="/music" element={<Music />} />
+          */
+        }
         <Route path="/videos" element={<Videos />} />
         <Route path="/imprint" element={<Imprint />} />
         <Route path="*" element={<Home />} />
