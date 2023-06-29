@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-import BackgroundImage from '../assets/images/discipleness.webp';
+import BackgroundImage from '../assets/images/optimized/discipleness.webp';
 
 const StyledAbout = styled.article`
     display: flex;

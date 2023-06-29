@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 import Markdown from 'markdown-to-jsx';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-import BackgroundImage from '../assets/images/library.webp';
+import BackgroundImage from '../assets/images/optimized/library.webp';
 
 const importAll = r => r.keys().map(r);
 
@@ -17,11 +18,10 @@ const createPoems = (poems, illustrations) => poems.map((poem, i) => (
       key={`poem-${i}`}
     >
       <div style={{ height: '340px', overflow: 'hidden' }}>
-        <img
+        <LazyLoadImage
+          alt="Poem illustration"
           src={illustrations[i < illustrations.length ? i : Math.ceil(i * 0.5)]}
           width="100%"
-          alt="Poem illustration"
-          style={{ marginBottom: '0px', borderRadius: '0px', maxHeight: '560px' }}
         />
       </div>
       <Markdown className="poem">{poem?.default}</Markdown>
@@ -31,15 +31,13 @@ const createPoems = (poems, illustrations) => poems.map((poem, i) => (
       height="fit-content"
       isPoem
       padding="0 0 25px 0"
-      style={{ cursor: 'pointer' }}
       key={`poem-${i}`}
     >
-      <div style={{ height: '550px', overflow: 'hidden' }}>
-        <img
-          src={illustrations[i]}
-          width="100%"
+      <div style={{ height: 'fit-content', overflow: 'hidden' }}>
+        <LazyLoadImage
           alt="Poem illustration"
-          style={{ marginBottom: '0px', borderRadius: '0px', maxHeight: '560px' }}
+          src={illustrations[i < illustrations.length ? i : Math.ceil(i * 0.5)]}
+          width="100%"
         />
       </div>
       <Markdown className="poem">{poem?.default}</Markdown>
@@ -53,8 +51,8 @@ const Poetry = () => {
   ));
 
   const illustrations = useMemo(() => importAll(
-    require.context('../assets/images/poems', false, /\.(webp)$/)
-  ));
+    require.context('../assets/images/poems/optimized', false, /\.(webp)$/)
+  ).sort(() => Math.random() - 0.5));
 
   const poemList = useMemo(
     () => createPoems(poems, illustrations),

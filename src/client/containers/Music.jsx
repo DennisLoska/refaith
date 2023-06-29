@@ -5,7 +5,7 @@ import useContainer from '../hooks/useContainer';
 import AlbumCover from '../assets/images/zeitkapsel.webp';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
-import BackgroundImage from '../assets/images/turntables.webp';
+import BackgroundImage from '../assets/images/optimized/turntables.webp';
 
 const Music = () => useContainer(
   (() => {

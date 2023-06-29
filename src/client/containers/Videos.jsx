@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import useContainer from '../hooks/useContainer';
 import config from '../config/config';
-import BackgroundImage from '../assets/images/abstract_angel.webp';
+import BackgroundImage from '../assets/images/optimized/abstract_angel.webp';
 
 const StyledVideos = styled.div`
     display: flex;
