@@ -12,6 +12,11 @@ module.exports = {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js'
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
   module: {
     rules: [{
       test: /\.(js|jsx)$/,
@@ -65,7 +70,7 @@ module.exports = {
     new CompressionPlugin({
       algorithm: 'gzip',
       test: /\.js$|\.css$|\.html$|\.woff$|\.woff2$/,
-      threshold: 10240,
+      threshold: 0,
       minRatio: 0.8
     })
   ]
