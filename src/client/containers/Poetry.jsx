@@ -1,28 +1,26 @@
-import React, { useMemo, useRef } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import Markdown from 'markdown-to-jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Virtuoso } from 'react-virtuoso';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
 import BackgroundImage from '../assets/images/optimized/library.webp';
+import List from '../components/virtuoso/List';
 
 const importAll = r => r.keys().map(r);
 
 const Poetry = () => {
-    const virtuoso = useRef(null);
+    const [viewMode, toggleViewMode] = useState(false);
 
     const poems = useMemo(() => importAll(
         require.context('../content/poems', false, /\.(md)$/)
     ));
 
-    console.log(poems[0]);
-
     const illustrations = useMemo(() => importAll(
         require.context('../assets/images/poems/optimized', false, /\.(webp)$/)
     ).sort(() => Math.random() - 0.5));
 
-    const Poem = useMemo(() => ({ i }) => (
+    const Poem = useMemo(() => ({ index: i }) => (
         <Card
             height="fit-content"
             isPoem
@@ -44,50 +42,32 @@ const Poetry = () => {
                 {poems?.[i]?.default?.split?.('\n').splice?.(1).join?.('\n')}
             </Markdown>
         </Card>
-    ));
+    ), [poems]);
 
-    // {Array.isArray(poemList) && poemList}
     return useContainer(
         <CardWrapper padding="50px 0px">
+            <label
+                className="viewmode-switch"
+                htmlFor="list"
+                onClick={() => toggleViewMode(prevState => !prevState)}
+            >
+                <input
+                    type="checkbox"
+                    name="list"
+                    checked={viewMode}
+                    readOnly
+                />
+                <div>
+                    <span />
+                </div>
+            </label>
             {
                 Array.isArray(poems) && Array.isArray(illustrations) && (
-                <>
-                    <Virtuoso
-                        useWindowScroll
-                        style={{
-                            width: '100%',
-                            filter: 'drop-shadow(2px 4px 6px black)'
-                        }}
-                        ref={virtuoso}
-                        components={{
-                            Footer: () => (
-                                <div
-                                    style={{
-                                        padding: '1rem',
-                                        textAlign: 'center',
-                                    }}
-                                >
-                                    <button
-                                        type="button"
-                                        className="scroll-button"
-                                        onClick={() => {
-                                            virtuoso.current.scrollToIndex({
-                                                index: 0, align: 'end', behavior: 'smooth'
-                                            });
-                                            return false;
-                                        }}
-                                    >
-                                        <i className="arrow-up" />
-                                    </button>
-                                </div>
-                            ),
-                        }}
-                        totalCount={poems.length}
-                        itemContent={index => (
-                            <Poem i={index} />
-                        )}
+                    <List
+                        asyncMode={viewMode}
+                        items={poems}
+                        content={index => <Poem index={index} />}
                     />
-                </>
                 )
             }
         </CardWrapper>,
