@@ -19,39 +19,38 @@ const StyledHome = styled.div`
 `;
 
 const Home = () => useContainer(
-  (() => {
-    const history = useNavigate();
-    return (
-      <StyledHome>
-        <CardWrapper>
-          <TitleWrapper>
-            <TitleText size="4em">
-              Christlicher Glaube in Poesie. Ein Versuch die Wahrheit in Worte zu fassen.
-            </TitleText>
-            <Row horizontalAlignment="center">
-              <HomeButton isFull onClick={() => history('/poetry')}>
-                Meine Poesie
-              </HomeButton>
-              <HomeButton onClick={() => history('/about')}>
-                Über Re:Faith
-              </HomeButton>
-            </Row>
-          </TitleWrapper>
-          <TitleText size="1em">
-            <a
-              href="https://redeemedblog.jimdofree.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Inspiriert durch Redeemed
-            </a>
-          </TitleText>
-        </CardWrapper>
-      </StyledHome>
-
-    );
-  })(),
-  BackgroundImage
+    (() => {
+        const history = useNavigate();
+        return (
+            <StyledHome>
+                <CardWrapper>
+                    <TitleWrapper>
+                        <TitleText size="4em">
+                            Christlicher Glaube in Poesie. Ein Versuch die Wahrheit in Worte zu fassen.
+                        </TitleText>
+                        <Row horizontalAlignment="center">
+                            <HomeButton isFull onClick={() => history('/poetry')}>
+                                Meine Poesie
+                            </HomeButton>
+                            <HomeButton onClick={() => history('/about')}>
+                                Über Re:Faith
+                            </HomeButton>
+                        </Row>
+                    </TitleWrapper>
+                    <TitleText size="1em">
+                        <a
+                            href="https://redeemedblog.jimdofree.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Inspiriert durch Redeemed
+                        </a>
+                    </TitleText>
+                </CardWrapper>
+            </StyledHome>
+        );
+    })(),
+    BackgroundImage
 );
 
 export default Home;

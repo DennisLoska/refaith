@@ -58,28 +58,28 @@ const StyledVideos = styled.div`
 `;
 
 const Videos = () => useContainer(
-  <StyledVideos>
-    {
-        Array.isArray(config?.videoList) ? (
-          config.videoList.map(videoUrl => (
-            <div
-              className="videoWrapper"
-              key={videoUrl}
-            >
-              <iframe
-                width="560"
-                src={videoUrl}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-          ))
-        ) : <h2>Keine Videos gefunden!</h2>
-    }
-  </StyledVideos>,
-  BackgroundImage
+    <StyledVideos>
+        {
+            Array.isArray(config?.videoList) ? (
+                config.videoList.map(videoUrl => (
+                    <div
+                        className="videoWrapper"
+                        key={videoUrl}
+                    >
+                        <iframe
+                            width="560"
+                            src={videoUrl}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        />
+                    </div>
+                ))
+            ) : <h2>Keine Videos gefunden!</h2>
+        }
+    </StyledVideos>,
+    BackgroundImage
 );
 
 export default Videos;

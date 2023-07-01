@@ -72,11 +72,11 @@ const StyledLoader = styled.div`
 `;
 
 const Loader = () => (
-  <StyledLoader>
-    <div className="heart-wrapper">
-      <div className="heart" />
-    </div>
-  </StyledLoader>
+    <StyledLoader>
+        <div className="heart-wrapper">
+            <div className="heart" />
+        </div>
+    </StyledLoader>
 );
 
 export default Loader;

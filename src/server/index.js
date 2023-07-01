@@ -12,22 +12,22 @@ const port = process.env.PORT || 5000;
 
 app.use(expressLogger);
 app.use((req, res, next) => {
-  logger.info(req);
-  next();
+    logger.info(req);
+    next();
 });
 
 app.use(compression());
 app.get('*.js', (req, res, next) => {
-  req.url += '.gz';
-  logger.info(req.url);
-  res.set('Content-Encoding', 'gzip');
-  res.set('Content-Type', 'text/javascript');
-  next();
+    req.url += '.gz';
+    logger.info(req.url);
+    res.set('Content-Encoding', 'gzip');
+    res.set('Content-Type', 'text/javascript');
+    next();
 });
 
 app.use(express.static('dist'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 app.listen(port, () => logger.info(`Server running on port ${port || 5000}!`));

@@ -6,14 +6,14 @@ const StyledCard = styled.div`
     min-height: ${props => (props.isPoem ? '250px' : '300px')};
     min-width: 300px;
     width: ${(props) => {
-    if (props.isPoem && window.innerWidth <= 600) {
-      return '100%';
-    }
-    if (props.isPoem) {
-      return 'fit-content';
-    }
-    return props.width || '300px';
-  }};
+        if (props.isPoem && window.innerWidth <= 600) {
+            return '100%';
+        }
+        if (props.isPoem) {
+            return 'fit-content';
+        }
+        return props.width || '300px';
+    }};
     max-width: ${props => (props.isPoem ? '35em' : 'unset')};
     margin: ${props => props.margin || '25px'};
     padding: ${props => props.padding || '25px'};
@@ -23,22 +23,39 @@ const StyledCard = styled.div`
     -webkit-box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'}; 
     -moz-box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'};
     height: ${(props) => {
-    if (props.isOpen || !props.isPoem) {
-      return props.height;
-    }
-    if (props.isPoem && !props.isOpen) {
-      return 'fit-content';
-    }
-    if (props.height) {
-      return props.height;
-    }
-    return '500px';
-  }};
+        if (props.isOpen || !props.isPoem) {
+            return props.height;
+        }
+        if (props.isPoem && !props.isOpen) {
+            return 'fit-content';
+        }
+        if (props.height) {
+            return props.height;
+        }
+        return '500px';
+    }};
     max-height: ${props => (props.isPoem && !props.isOpen ? '1120px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
     position: relative;
     overflow-x: hidden;
     font-family: inherit;
+
+    .poem-title {
+        position: absolute;
+        font-size: 48px;
+        font-weight: 600;
+        color: #fff;
+        filter: drop-shadow(10px 5px 3px black);
+        backdrop-filter: blur(2px);
+        width: 100%;
+        height: 100%;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0% 10%;
+    }
 
     .fadeout {
         position: absolute; 
@@ -141,41 +158,41 @@ const StyledCard = styled.div`
   `;
 
 const Card = (props) => {
-  const [isOpen, setOpen] = useState(false);
-  const { isPoem, children } = props;
+    const [isOpen, setOpen] = useState(false);
+    const { isPoem, children } = props;
 
-  // character length of a potential poem
-  const contentLength = children[1]?.props?.children?.length;
+    // character length of a potential poem
+    const contentLength = children[1]?.props?.children?.length;
 
-  // no expand option for short poems
-  const SHORT_LIMIT = 500;
+    // no expand option for short poems
+    const SHORT_LIMIT = 500;
 
-  return (
-    <StyledCard {...props} isOpen={isOpen}>
-      { children }
-      {
-          !isOpen && isPoem && contentLength > SHORT_LIMIT ? (
-            <div className="fadeout" />
-          ) : null
-      }
-      {
-          isOpen && isPoem && contentLength > SHORT_LIMIT ? (
-            <div className="contentSpacer" />
-          ) : null
-      }
-      {
-            isPoem && contentLength > SHORT_LIMIT ? (
-              <button
-                onClick={() => setOpen(!isOpen)}
-                type="button"
-                className="toggleButton"
-              >
-                {!isOpen ? 'Weiterlesen' : 'Schließen'}
-              </button>
-            ) : null
-        }
-    </StyledCard>
-  );
+    return (
+        <StyledCard {...props} isOpen={isOpen}>
+            { children }
+            {
+                !isOpen && isPoem && contentLength > SHORT_LIMIT ? (
+                    <div className="fadeout" />
+                ) : null
+            }
+            {
+                isOpen && isPoem && contentLength > SHORT_LIMIT ? (
+                    <div className="contentSpacer" />
+                ) : null
+            }
+            {
+                isPoem && contentLength > SHORT_LIMIT ? (
+                    <button
+                        onClick={() => setOpen(!isOpen)}
+                        type="button"
+                        className="toggleButton"
+                    >
+                        {!isOpen ? 'Weiterlesen' : 'Schließen'}
+                    </button>
+                ) : null
+            }
+        </StyledCard>
+    );
 };
 
 

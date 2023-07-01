@@ -18,13 +18,13 @@ const StyledNavigationItem = styled.span`
 `;
 
 const NavigationItem = ({ navId, to, children }) => {
-  // highlight current page in menu
-  const activePage = window.location.hash.replace('#/', '');
-  return (
-    <StyledNavigationItem activePage={activePage} navId={navId}>
-      <Link to={to}>{children}</Link>
-    </StyledNavigationItem>
-  );
+    // highlight current page in menu
+    const activePage = window.location.hash.replace('#/', '');
+    return (
+        <StyledNavigationItem activePage={activePage} navId={navId}>
+            <Link to={to}>{children}</Link>
+        </StyledNavigationItem>
+    );
 };
 
 export default NavigationItem;

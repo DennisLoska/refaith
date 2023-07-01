@@ -35,39 +35,39 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Construction = () => {
-  // setup initial component state
-  const [data, setData] = useState(null);
-  return (
-    <Backdrop>
-      <TitleWrapper>
-        <TitleText size="6em">
-          Re:Faith
-        </TitleText>
-        <TitleText size="1.5em">
-          Seite wird aktuell bearbeitet!
-        </TitleText>
-      </TitleWrapper>
-      <ReactJkMusicPlayer
-        theme="dark"
-        bounds="html"
-        mode="full"
-        glassBg
-        spaceBar
-        responsive
-        showDownload
-        showThemeSwitch
-        showMediaSession
-        autoPlay={false}
-        remove={false}
-        showLyric={false}
-        toggleMode={false}
-        autoPlayInitLoadPlayList={false}
-        defaultVolume={0.7}
-        audioLists={audioList}
-      />
-      <GlobalStyle />
-    </Backdrop>
-  );
+    // setup initial component state
+    const [data, setData] = useState(null);
+    return (
+        <Backdrop>
+            <TitleWrapper>
+                <TitleText size="6em">
+                    Re:Faith
+                </TitleText>
+                <TitleText size="1.5em">
+                    Seite wird aktuell bearbeitet!
+                </TitleText>
+            </TitleWrapper>
+            <ReactJkMusicPlayer
+                theme="dark"
+                bounds="html"
+                mode="full"
+                glassBg
+                spaceBar
+                responsive
+                showDownload
+                showThemeSwitch
+                showMediaSession
+                autoPlay={false}
+                remove={false}
+                showLyric={false}
+                toggleMode={false}
+                autoPlayInitLoadPlayList={false}
+                defaultVolume={0.7}
+                audioLists={audioList}
+            />
+            <GlobalStyle />
+        </Backdrop>
+    );
 };
 
 export default Construction;
