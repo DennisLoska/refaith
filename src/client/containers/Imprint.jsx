@@ -28,7 +28,8 @@ const Imprint = () => useContainer(
             <span>d.loska@proton.me</span>
         </Card>
     </StyledAbout>,
-    BackgroundImage
+    BackgroundImage,
+    true
 );
 
 export default Imprint;

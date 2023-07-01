@@ -88,7 +88,8 @@ const About = () => useContainer(
             <span>Dennis</span>
         </Card>
     </StyledAbout>,
-    BackgroundImage
+    BackgroundImage,
+    true
 );
 
 export default About;

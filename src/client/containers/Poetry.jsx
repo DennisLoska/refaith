@@ -71,7 +71,8 @@ const Poetry = () => {
                 )
             }
         </CardWrapper>,
-        BackgroundImage
+        BackgroundImage,
+        true
     );
 };
 export default Poetry;

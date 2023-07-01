@@ -70,7 +70,8 @@ const Music = () => useContainer(
             </>
         );
     })(),
-    BackgroundImage
+    BackgroundImage,
+    true
 );
 
 export default Music;

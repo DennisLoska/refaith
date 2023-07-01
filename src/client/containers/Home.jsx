@@ -50,7 +50,8 @@ const Home = () => useContainer(
             </StyledHome>
         );
     })(),
-    BackgroundImage
+    BackgroundImage,
+    true
 );
 
 export default Home;

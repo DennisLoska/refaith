@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Backdrop = styled.div`
     background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%) no-repeat;
     ${(props) => {
-        if (props.coverImage != null) {
+        if (props.coverImage) {
             return `
           background-image: url(${props.coverImage});
           background-position: center;
@@ -13,8 +13,7 @@ const Backdrop = styled.div`
       `;
         }
     }}
-    animation: colorChange 20s alternate infinite;
-    position: absolute;
+    ${({ animation }) => animation && 'animation: colorChange 20s alternate infinite;'}
     min-height: 100%;
     height: fit-content;
     top: 0;
