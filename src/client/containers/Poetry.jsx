@@ -46,7 +46,7 @@ const Poetry = () => {
     ), [poems]);
 
     return useContainer(
-        <CardWrapper padding="50px 10%">
+        <CardWrapper padding="50px 10% 100px 10%">
             <ToggleButton toggleViewMode={toggleViewMode} viewMode={viewMode} />
             {
                 Array.isArray(poems) && Array.isArray(illustrations) && (
