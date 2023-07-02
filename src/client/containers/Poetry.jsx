@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState } from 'react';
 import Markdown from 'markdown-to-jsx';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CardWrapper from '../components/card/CardWrapper';
@@ -6,6 +6,7 @@ import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
 import BackgroundImage from '../assets/images/optimized/library.webp';
 import List from '../components/virtuoso/List';
+import ToggleButton from '../components/buttons/ToggleButton';
 
 const importAll = r => r.keys().map(r);
 
@@ -45,22 +46,8 @@ const Poetry = () => {
     ), [poems]);
 
     return useContainer(
-        <CardWrapper padding="50px 0px">
-            <label
-                className="viewmode-switch"
-                htmlFor="list"
-                onClick={() => toggleViewMode(prevState => !prevState)}
-            >
-                <input
-                    type="checkbox"
-                    name="list"
-                    checked={viewMode}
-                    readOnly
-                />
-                <div>
-                    <span />
-                </div>
-            </label>
+        <CardWrapper padding="50px 10%">
+            <ToggleButton toggleViewMode={toggleViewMode} viewMode={viewMode} />
             {
                 Array.isArray(poems) && Array.isArray(illustrations) && (
                     <List
@@ -72,7 +59,7 @@ const Poetry = () => {
             }
         </CardWrapper>,
         BackgroundImage,
-        true
+        Math.random() < 0.5
     );
 };
 export default Poetry;

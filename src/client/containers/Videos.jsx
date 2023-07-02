@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import useContainer from '../hooks/useContainer';
 import config from '../config/config';
-import BackgroundImage from '../assets/images/optimized/abstract_angel.webp';
+import BackgroundImage from '../assets/images/poems/optimized/cathedral2.webp';
 import List from '../components/virtuoso/List';
 
 const StyledVideos = styled.div`

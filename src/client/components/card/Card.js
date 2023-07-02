@@ -2,8 +2,38 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
+    background: ${props => props.background || '#F8F8F8'}; 
+    ${(props) => {
+        if (props.backgroundImage) {
+            return `
+                &::before {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-image: url(${props.backgroundImage});
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 5px;
+                    filter: blur(5px) grayscale(1) opacity(0.8) brightness(0.4);
+                    z-index: -42;
+                }
+            `;
+        }
+    }}
     border-radius: 5px;
-    min-height: ${props => (props.isPoem ? '250px' : '300px')};
+    min-height: ${(props) => {
+        if (props.isPoem) {
+            return '250px';
+        }
+        if (props.minHeight) {
+            return props.minHeight;
+        }
+        return '300px';
+    }};
     min-width: 300px;
     width: ${(props) => {
         if (props.isPoem && window.innerWidth <= 600) {
@@ -17,7 +47,6 @@ const StyledCard = styled.div`
     max-width: ${props => (props.isPoem ? '35em' : 'unset')};
     margin: ${props => props.margin || '25px'};
     padding: ${props => props.padding || '25px'};
-    background: ${props => props.background || '#F8F8F8'}; 
     border: ${props => props.border}; 
     box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'}; 
     -webkit-box-shadow: ${props => props.boxShadow || '3px 2px 18px rgba(0, 0, 0, 0.3)'}; 
@@ -36,6 +65,7 @@ const StyledCard = styled.div`
     }};
     max-height: ${props => (props.isPoem && !props.isOpen ? '1120px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
+    color: ${props => (props.color ? props.color : 'inherit')};
     position: relative;
     overflow-x: hidden;
     font-family: inherit;
@@ -154,6 +184,10 @@ const StyledCard = styled.div`
       &:hover {
         cursor: pointer;
       }
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 95%;
     }
   `;
 

@@ -21,6 +21,12 @@ const useContainer = (children, coverImage, animation) => (
                     */
                 }
                 <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
+                <NavigationItem navId="art" to="/art">Kunst</NavigationItem>
+                {
+                    /*
+                        <NavigationItem navId="faith" to="/faith">Glaube</NavigationItem>
+                    */
+                }
                 <NavigationItem navId="about" to="/about">Über</NavigationItem>
                 <NavigationItem navId="imprint" to="/imprint">Impressum</NavigationItem>
             </Navigation>

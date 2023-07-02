@@ -7,8 +7,9 @@ import {
 } from 'react-router-dom';
 
 import Loader from './containers/Loader';
+import Art from './containers/Art';
 
-// const Construction = lazy(() => import('./containers/Construction'));
+const Construction = lazy(() => import('./containers/Construction'));
 const Home = lazy(() => import('./containers/Home'));
 const About = lazy(() => import('./containers/About'));
 const Music = lazy(() => import('./containers/Music'));
@@ -30,6 +31,12 @@ ReactDOM.render(
                     */
                 }
                 <Route path="/videos" element={<Videos />} />
+                <Route path="/art" element={<Art />} />
+                {
+                    /*
+                    <Route path="/faith" element={<Faith />} />
+                    */
+                }
                 <Route path="/imprint" element={<Imprint />} />
                 <Route path="*" element={<Home />} />
             </Routes>
