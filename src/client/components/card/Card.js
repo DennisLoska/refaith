@@ -63,7 +63,7 @@ const StyledCard = styled.div`
         }
         return '500px';
     }};
-    max-height: ${props => (props.isPoem && !props.isOpen ? '1120px' : 'unset')};
+    max-height: ${props => (props.isPoem && !props.isOpen ? '750px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
     color: ${props => (props.color ? props.color : 'inherit')};
     position: relative;
