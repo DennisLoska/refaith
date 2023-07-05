@@ -53,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .backdrop-blur {
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(5px) saturate(0.3) hue-rotate(300deg) brightness(0.5);
         min-height: 100vh;
         height: fit-content;
     }

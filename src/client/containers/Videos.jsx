@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import useContainer from '../hooks/useContainer';
 import config from '../config/config';
-import BackgroundImage from '../assets/images/poems/optimized/cathedral2.webp';
+// import BackgroundImage from '../assets/images/poems/optimized/cathedral2.webp';
+import BackgroundImage from '../assets/images/poems/optimized/cathedral3.webp';
 import List from '../components/virtuoso/List';
 
 const StyledVideos = styled.div`
