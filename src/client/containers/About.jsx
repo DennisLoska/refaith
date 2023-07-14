@@ -41,7 +41,7 @@ const About = () => useContainer(
                 </p>
                 <p>
                     Diese Seite ist lediglich ein kleiner kreativer Raum für mich, um meine Gefühle und Gedanken zu ordnen und nicht eine Tätigkeit, welche ich mit viel Intensität verfolge.
-                    Es ist lediglich ein Werkzeug, was ich ergänzend zu meinem Alltag nutze. Als Softwareentwickler habe ich so ein kleines Nebenprojekt, um an dieser Seite zu arbeiten und mich mit unterschiedlichsten Themen wie künstlicher Intelligenz und Philosophie zu sinnvoll zu beschäftigen.
+                    Es ist lediglich ein Werkzeug, was ich ergänzend zu meinem Alltag nutze. Als Softwareentwickler habe ich so ein kleines Nebenprojekt, um an dieser Seite zu arbeiten und mich mit unterschiedlichsten Themen wie künstlicher Intelligenz und Philosophie sinnvoll zu beschäftigen.
                 </p>
             </Card>
         </Card>
