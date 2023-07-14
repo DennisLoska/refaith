@@ -15,22 +15,7 @@ const useContainer = (children, coverImage, animation) => (
             </Header>
             <Navigation>
                 <NavigationItem navId="poetry" to="/poetry">Poesie</NavigationItem>
-                {
-                    /*
-                        <NavigationItem navId="music" to="/music">Musik</NavigationItem>
-                    */
-                }
-                {
-                    /*
-                    <NavigationItem navId="videos" to="/videos">Videos</NavigationItem>
-                    */
-                }
                 <NavigationItem navId="art" to="/art">Kunst</NavigationItem>
-                {
-                    /*
-                        <NavigationItem navId="faith" to="/faith">Glaube</NavigationItem>
-                    */
-                }
                 <NavigationItem navId="about" to="/about">Über</NavigationItem>
                 <NavigationItem navId="imprint" to="/imprint">Impressum</NavigationItem>
             </Navigation>

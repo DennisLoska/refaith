@@ -4,8 +4,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CardWrapper from '../components/card/CardWrapper';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-// import BackgroundImage from '../assets/images/optimized/library.webp';
-// import BackgroundImage from '../assets/images/poems/optimized/rome.webp';
 import BackgroundImage from '../assets/images/poems/optimized/cathedral3.webp';
 import List from '../components/virtuoso/List';
 import ToggleButton from '../components/buttons/ToggleButton';

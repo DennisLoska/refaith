@@ -1,5 +1,5 @@
 import React, {
-    useMemo, useRef, useState
+    useMemo, useRef
 } from 'react';
 import { Virtuoso } from 'react-virtuoso';
 import Footer from './Footer';

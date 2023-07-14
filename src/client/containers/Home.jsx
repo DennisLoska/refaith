@@ -37,19 +37,6 @@ const Home = () => useContainer(
                             </HomeButton>
                         </Row>
                     </TitleWrapper>
-                    {
-                        /*
-                    <TitleText size="1em">
-                        <a
-                            href="https://redeemedblog.jimdofree.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Inspiriert durch Redeemed
-                        </a>
-                    </TitleText>
-                        */
-                    }
                 </CardWrapper>
             </StyledHome>
         );
