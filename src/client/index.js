@@ -30,7 +30,11 @@ ReactDOM.render(
                         <Route path="/music" element={<Music />} />
                     */
                 }
-                <Route path="/videos" element={<Videos />} />
+                {
+                    /*
+                    <Route path="/videos" element={<Videos />} />
+                    */
+                }
                 <Route path="/art" element={<Art />} />
                 {
                     /*

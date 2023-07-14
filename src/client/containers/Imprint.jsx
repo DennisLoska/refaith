@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../components/card/Card';
 import useContainer from '../hooks/useContainer';
-// import BackgroundImage from '../assets/images/optimized/cathedral_person1.webp';
 import BackgroundImage from '../assets/images/poems/optimized/cathedral3.webp';
 
 const StyledAbout = styled.article`

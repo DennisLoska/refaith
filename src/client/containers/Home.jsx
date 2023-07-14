@@ -37,6 +37,8 @@ const Home = () => useContainer(
                             </HomeButton>
                         </Row>
                     </TitleWrapper>
+                    {
+                        /*
                     <TitleText size="1em">
                         <a
                             href="https://redeemedblog.jimdofree.com/"
@@ -46,6 +48,8 @@ const Home = () => useContainer(
                             Inspiriert durch Redeemed
                         </a>
                     </TitleText>
+                        */
+                    }
                 </CardWrapper>
             </StyledHome>
         );
