@@ -66,6 +66,8 @@ const StyledCard = styled.div`
     max-height: ${props => (props.isPoem && !props.isOpen ? '750px' : 'unset')};
     overflow-y: ${props => (props.isPoem ? 'hidden' : 'auto')};
     color: ${props => (props.color ? props.color : 'inherit')};
+    cursor: ${props => (props.cursor ? props.cursor : 'unset')};
+
     position: relative;
     overflow-x: hidden;
     font-family: inherit;
