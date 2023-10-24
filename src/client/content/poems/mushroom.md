@@ -1,4 +1,4 @@
-# The mushroom said to me
+# Myko said to me
 
 Don't eat me. <br>
 Forgive thee.
